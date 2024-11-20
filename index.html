@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       .main {
+            height: 300px;
+            width: 600px;
+            margin: 20px 0;
+        }
+        .bold-txt {
+            font-size: 2em;
+            font-weight: 900;
+        }
+
+    .user>span {
+        display: none;
+    }
+
+    .error {
+        color: red;
+        font-size: 0.5em;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <form action="" onSubmit="dataSubmit(event)">
+            <div>
+                Name: <br>
+                <input type="text" placeholder="Enter Your Name" id="user" onInput="validInput(event)">
+                <span class="error"></span>
+            </div>
+            <br>
+            <div>
+                Email : <br>
+                <input type="text" placeholder="Enter Your Email" id="email">
+                <span class="error"></span>
+            </div>
+            <br>
+            <div>
+                Password : <br>
+                <input type="password" placeholder="Enter Your Password" id="pass">
+                <span class="error"></span>
+            </div>
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+
+    <div>
+        <select name="" id="">
+            <option value="Empty">Select Your City</option>
+            <option value="Kar">Karachi</option>
+            <option value="Lah">Lahore</option>
+            <option value="Isl">Islamabad</option>
+            <option value="Que">Quetta</option>
+        </select>
+
+    </div>
+    <br>
+
+    <div>
+        <input type="radio" value="male" name="gen" id="m">Male
+        <input type="radio" value="female" name="gen" id="fm">Female
+    </div>
+
+
+    </form>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
